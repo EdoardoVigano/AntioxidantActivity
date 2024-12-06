@@ -47,7 +47,7 @@ def pipeline_model_importer():
     with open(os.path.join(os.getcwd(), 'pipeline_and_AD', 'pipeline.pkl'), 'rb') as f:
         pipeline = pickle.load(f)
 
-    with open(os.path.join(os.getcwd(), 'pipeline_and_AD', 'AD_clf_xgb.pkl'), 'rb') as f:
+    with open(os.path.join(os.getcwd(), 'pipeline_and_AD', 'AD_clf.pkl'), 'rb') as f:
         ad = pickle.load(f)
         
     return model1, model2, pipeline, ad

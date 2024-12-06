@@ -1,2 +1,2 @@
 # AntioxidantActivity
-Antioxidant Activity prediction IC50
+Antioxidant Activity predction IC50
