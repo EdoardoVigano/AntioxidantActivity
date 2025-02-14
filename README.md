@@ -12,4 +12,15 @@ To run the program:
 ### Single molecule mode:
 Command -> python Main.py --smiles [write single SMILES] [optional]: --summary 1
 
-###Batch mode:
+### Batch mode:
+Command -> python Main.py--file [add file name] [optional]: --summary 1
+Key: 
+        --file: path of file to predict the antioxidant activity must have column named SMILES (batch functionality)
+        OPTIONAL: set summary to one
+        --summary 1 to obtain only the consensus prediction and uncertanty value.
+        [default] --summary None to obtain all the models' predictions.
+
+### Examples:
+    python Main.py --smiles c1ccccc1CCN --summary 1
+    python Main.py --file test.xlsx --summary 1 
+    python Main.py --file test.xlsx 
