@@ -3,26 +3,23 @@ Our software has been developed for predicting the antioxidant activity of small
 Given the SMILES as input the software will predict the half-maximal inhibitory concentration (IC50) of the substance(s) of interest.
 ## Installation
 1.	Download from [here](https://github.com/EdoardoVigano/AntioxidantActivity) the AntioxidantActivity_DPPH folder and unzip it
-2.	Do not move the files out of the folder
-3.	Create the AntioxidantDPPH environment
-4.	Using python 3.11.10 install the following dependencies: scikit-learn==1.4.0 rdkit==2023.9.4 pandas==2.2.0 mordred==1.2.0 xgboost==2.1.3
+2.	Do not move the files out of the folder.
+3.	Create the AntioxidantDPPH environment: conda create --name AntioxidantActivity_DPPH python=3.11
+4.	pip install the following dependencies: scikit-learn==1.4.0 rdkit==2023.9.4 pandas==2.2.0 mordred==1.2.0 xgboost==2.1.3
+5.	To use by terminal: conda activate AntioxidantActivity and open the folder "AntioxidantActivity_DPPH"
 ## Usage
 To run the program:
-
-1. Command:
-    python Main.py --file [add file name] or --smiles [write single SMILES] [optional]: --summary 1
-
+Single molecule mode:
+Command -> python Main.py --smiles [write single SMILES] [optional]: --summary 1
+Batch mode:
+Command -> python Main.py--file [add file name] [optional]: --summary 1
     key: 
         --file: path of file to predict the antioxidant activity must have column named SMILES (batch functionality)
-        OR
-        --smiles: write single SMILES to predic (single molecule functionality)
-
         OPTIONAL: set summary to one
-        --summary 1 to have only the consensus prediction and uncertanty value.
-        [default] --summary None all model predictions are reported
+        --summary 1 to obtain only the consensus prediction and uncertanty value.
+        [default] --summary None to obtain all the models' predictions.
 
-
-2. examples:
+Examples:
     python Main.py --smiles c1ccccc1CCN --summary 1
-    python Main.py --file test.xlsx --summary 1
+    python Main.py --file test.xlsx --summary 1 
     python Main.py --file test.xlsx 
