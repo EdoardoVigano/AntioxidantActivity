@@ -5,7 +5,7 @@ Given the SMILES as input the software will predict the half-maximal inhibitory 
 1.	Download from [here](https://github.com/EdoardoVigano/AntioxidantActivity) the AntioxidantActivity_DPPH folder and unzip it
 2.	Do not move the files out of the folder
 3.	Create the AntioxidantDPPH environment
-4.	Install dependencies
+4.	Using python 3.11.10 install the following dependencie: scikit-learn==1.4.0 rdkit==2023.9.4 pandas==2.2.0 mordred==1.2.0 xgboost==2.1.3
 ## Usage
 To run the program:
 
