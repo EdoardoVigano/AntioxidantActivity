@@ -9,10 +9,12 @@ Given the SMILES as input the software will predict the half-maximal inhibitory 
 5.	To use by terminal: conda activate AntioxidantActivity and open the folder "AntioxidantActivity_DPPH"
 ## Usage
 To run the program:
-Single molecule mode:
+
+1. Single molecule mode:
 Command -> python Main.py --smiles [write single SMILES] [optional]: --summary 1
+
 Batch mode:
-Command -> python Main.py--file [add file name] [optional]: --summary 1
+3. Command -> python Main.py--file [add file name] [optional]: --summary 1
     key: 
         --file: path of file to predict the antioxidant activity must have column named SMILES (batch functionality)
         OPTIONAL: set summary to one
