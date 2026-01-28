@@ -1,4 +1,7 @@
 # Antioxidant Activity: In silico models for predicting the antioxidant activity of small molecules relevant to human health
+
+## you can find the official pubblication [here(https://doi.org/10.3390/jox15030080)]
+
 Our software has been developed for predicting the antioxidant activity of small molecules (< 1000 Da) and it aims to assist in identifying potential substances that could be applied in health support. It is built on regression models developed on an expert-curated dataset of antioxidants.
 Given the SMILES as input the software will predict the half-maximal inhibitory concentration (IC50) of the substance(s) of interest.
 ## Installation
